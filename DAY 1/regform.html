@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form >
+        Enter Your First Name:
+        <input type="text"  id="fn" placeholder="First Name"><br>
+        Enter Your Second Name:
+        <input type="text"  id="ln" placeholder="Second Name"><br>
+        Enter Your Email:
+        <input type="text"  id="em" placeholder="Enter Your Email"><br>
+        Enter Your Number:
+        <input type="number" id="num" placeholder="Enter your Number"><br>
+        <input type="button" value="submit" id="btn" onclick="myfunction()">
+    </form>
+    <script>
+        function myfunction(){
+            var a=document.getElementById('fn').value;
+            var b=document.getElementById('ln').value;
+            var c=document.getElementById('em').value;
+            var d=document.getElementById('num').value;
+            
+            document.write(`First Name is: ${a} <br> Last Name is:${b} <br> Email is : ${c} <br> Phone Number is: ${d}`);
+        }
+    </script>
+</body>
+</html> 

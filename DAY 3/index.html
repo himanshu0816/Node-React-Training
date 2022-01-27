@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: rgb(97, 71, 212);
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: rgb(241, 193, 148);
+            box-shadow: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <br>
+        <h1 class="text-danger text-center"><u>STUDENT VALIDATION FORM</u></h1><br>
+        <div class="col-lg m-auto d-block">
+            <form onsubmit="return validation()" class="bg-light">
+                <div class="form-group">
+                    First Name:
+                    <input  type="text" class="form-control" id="fn" placeholder="First Name" required>
+                    Last Name:
+                    <input  type="text" class="form-control" id="ln" placeholder="Last Name" required>
+                    User Name:
+                    <input  type="text" class="form-control" id="un" placeholder="Username" required>
+                    Mobile Number:
+                    <input  type="text" class="form-control" id="mn" placeholder="Enter Your Number" required>
+                    <strong>Gender:</strong>
+                    <input type="radio" id="ml" name="gender" value="male">
+                    Male
+                    <input type="radio" id="feml" name="gender" value="female">
+                    Female<br>
+                    <strong>Select Your subjects</strong>
+                    <br>
+                    <tr>  
+                        <input type="checkbox" id="check1" name="pl" value="Java">   Java
+                        <input type="checkbox" id="check2" name="pl" value="PHP">     PHP
+                        <input type="checkbox" id="check3" name="pl" value="React">   REACT
+                        <input type="checkbox" id="check4" name="pl" value="CSS">   CSS
+                        <input type="checkbox" id="check5" name="pl" value="Python">   Python
+                        <input type="checkbox" id="check6" name="pl" value="Android"> Android
+                    </tr> <br> <br>  
+                    <table>
+                        <tr>
+                            <th>Name Of school</th>
+                            <th>Class</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" required></td>
+                            <td><input type="text"required></td>
+                            <td><input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" required></td>
+                            <td><input type="text" required></td>
+                            <td><input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" required></td>
+                            <td><input type="text" required></td>
+                            <td><input type="text" required></td>
+                        </tr>
+                    </table>
+                    <button class="btn btn-danger  text-center" type="submit" onclick="validate()">submit</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        function validate()
+        {
+        var a=document.getElementById('fn').value;
+        var b=document.getElementById('ln').value;
+        var c=document.getElementById('un').value;
+        var d=document.getElementById('mn').value;
+        if(document.getElementById('male').checked)
+{
+document.getElementById("disp").innerHTML= document.getElementById("male").value;
+}
+else if(document.getElementById('female').checked)
+{
+document.getElementById("disp").innerHTML = document.getElementById("female").value;
+}
+        
+        document.write(`FIrst Name ${a}`);
+        document.write(`Second Name ${b}`);
+        document.write(`User Name ${c}`);
+        document.write(`Mobile Number ${d}`);
+}
+    </script>
+</body>
+
+</html>

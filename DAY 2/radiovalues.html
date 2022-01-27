@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <label>Gender</label><br>    <input type ="radio" id="male" name="gender" value="Male">    
+<label for="male">Male</label>    <input type ="radio" id="female" name="gender" value="Female">   
+<label for="female">Female</label><br><br/> -->
+
+<strong>Gender</strong>
+<input type="radio" id="male" name="gender" value="Male">
+Male
+<input type="radio" name="gender" id="female" value="Female">
+Female
+<br>
+<input type="submit" value="submit" onclick="myfunction()">
+<h1 id="demo"></h1>
+<script>
+    function myfunction(){
+    if(document.getElementById('male').checked)
+    {
+        document.getElementById('demo').innerHTML=document.getElementById('male').value;
+    }
+    else if(document.getElementById('female').checked)
+    {
+        document.getElementById('demo').innerHTML=document.getElementById('female').value;
+    }
+    }
+</script>
+</body>
+</html>

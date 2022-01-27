@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>STUDENT REGISTRAION FORM</h2>
+            <form id="form">
+                <div class="form-control">
+                    First Name:
+                    <input type="text"  id="fn" placeholder="First Name">
+                    Last Name:
+                    <input type="text"  id="ln" placeholder="Last Name">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<html>  
+<body>  
+  
+
+<tr>  
+                        Java: <input type="checkbox" id="check1" name="pl" value="Java">   
+                        PHP: <input type="checkbox" id="check2" name="pl" value="PHP">    
+                        Angular: <input type="checkbox" id="check3" name="pl" value="Angular">   
+                        CSS: <input type="checkbox" id="check4" name="pl" value="CSS">   
+                        Python: <input type="checkbox" id="check5" name="pl" value="Python">   
+                        Android: <input type="checkbox" id="check6" name="pl" value="Android"> 
+                        
+                    </tr> <br> <br>
+<h1 id="demo">values are</h1>
+<button id="btn">Submit</button> <br>  
+    
+  
+<script>  
+document.getElementById('btn').onclick = function() {  
+  var markedCheckbox = document.getElementsByName('pl');  
+ for (var checkbox of markedCheckbox) 
+  {  
+    if (checkbox.checked)  
+     document.getElementById("demo").innerHTML x=document.body.append(checkbox.value); 
+     
+  }  
+  
+}  
+</script>  
+  
+</body>  
+</html>  

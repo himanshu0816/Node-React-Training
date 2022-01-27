@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p>Click the button to create a Text Node</p>
+        
+        <button onclick="myFunction()">click</button>
+
+        <script>
+            function myFunction(){
+                var h=document.createElement("H1");
+                var t= document.createTextNode("hello world");
+                h.appendChild(t);
+                document.body.appendChild(h);
+            }
+        </script>
+    </body>
+</html>

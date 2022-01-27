@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/add3935b77.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR6wH9Cp0tScyzLumKFApC3K3Id_p0y7tOjA&usqp=CAU');
+        }
+        .form-group{
+            margin: auto;
+            width: 70%;
+            background-color: transparent;
+            
+        }
+        .container{
+            
+            margin: auto;
+            width: 50%;
+            background-color: transparent;
+        }
+    </style>
+    <title>Hospital Registration</title>
+</head>
+<body>
+            <div class="container">
+                <br>
+                <h1 class="text-danger text-center"><i class="fas fa-hospital"></i><u>HOSPITAL REGISTRATION FORM</u><i class="fas fa-hospital"></i></h1><br>
+                
+                    
+                        <div class="form-group">
+                            Patient Number:
+                            <input  type="text" class="form-control" id="pn" placeholder="Enter Patient Number" required>
+                            Patient First Name:
+                            <input  type="text" class="form-control" id="fn" placeholder="First Name" required>
+                            Patient Last Name:
+                            <input  type="text" class="form-control" id="ln" placeholder="Last Name" required>
+                            Mobile Number:
+                            <input  type="number" class="form-control" id="mn" placeholder="Enter Your Number" required>
+                            <strong>Gender:</strong>
+                            <input type="radio" id="male" name="gender" value="Male" required>
+                            Male
+                            <input type="radio" id="female" name="gender" value="Female">
+                            Female<br>
+                            
+                            Adhar Number:
+                            <input  type="number" class="form-control" id="an" placeholder="Enter Adhar Number" required>
+                            <br>
+                            Email Id:
+                            <input  type="mail" class="form-control" id="email" placeholder="Enter Your mail" required>
+                            <br>
+                            Date Of Birth :
+                            <input  type="date" class="form-control" id="dob" placeholder="DD-MM-YYYY" required><br>
+                            <strong>Select Blood Gruop:</strong>
+                            
+                            <select name="bloodgroup" id="bg">
+                                <option value="A+">A+</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="B+">B+</option>
+                                <option value="O+">o+</option>
+                                <option value="O-">o-</option>
+                                <option value="A-">A-</option>
+                            </select>
+                            <br>
+                            <strong>Disease Of patient:</strong>
+                            
+                            <tr>  
+                                <input type="checkbox" id="check1" name="pl" value="CARDIOLOGY"> CARDIOLOGY
+                                <input type="checkbox" id="check2" name="pl" value="PLASTIC CSOMETIC">    PLASTIC COSMETIC
+                                <input type="checkbox" id="check3" name="pl" value="COVID">   COVID
+                                <input type="checkbox" id="check4" name="pl" value="ORTHO">   ORTHO
+                                <input type="checkbox" id="check5" name="pl" value="LAPROSCOPY GASTRO">  LAPROSCOPY GASTRO
+                                <input type="checkbox" id="check6" name="pl" value="Android"> Others
+                            </tr> <br>  
+                            
+                            <input  class="btn btn-danger" type="submit" value="submit"  onclick="validate()">
+                        </div>
+        
+            </div>
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>  
+<body>  
+
+<h2>Create a checkbox and get its value</h2>  
+
+Yes: <input type="checkbox" id="myCheck1" value="Yes">  
+No: <input type="checkbox" id="myCheck2" value="No">  
+<br> <br>  
+<button onclick="checkCheckbox()">Submit</button> <br>  
+
+<h4 id="hb"></h4>   
+<script>  
+function checkCheckbox() {  
+var yes = document.getElementById("myCheck1");  
+var no = document.getElementById("myCheck2");  
+if (yes.checked == true && no.checked == true){  
+    var y=document.getElementById('myCheck1').value;
+    var no=document.getElementById('myCheck2').value;
+    return document.getElementById("hb").innerHTML = "your subject are"+" "+y+" ,"+no;  
+}  
+else {  
+    return document.getElementById("hb").innerHTML = "Select both";   
+}   
+}  
+</script>  
+</body>  
+</html>  

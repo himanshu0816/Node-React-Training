@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Testing</title>
+    <script>
+      fn = () => {
+        a = document.getElementById("fno").value;
+        b = document.getElementById("sno").value;
+        c = document.getElementById("op").value;
+
+        if (c == "add") {
+          console.log(typeof a);
+          // a = parseInt(a);
+          if (typeof a == String && typeof b == string) {
+            // var sum = a + b;
+            // console.log(typeof a);
+            document.getElementById("result").innerHTML = "Hello";
+          } else {
+            document.getElementById("result").innerHTML = "Try again";
+          }
+        } else if (c === "minus") {
+          var sum = a - b;
+          document.getElementById("result").innerHTML =
+            "Difference of " + a + " and " + b + " is " + sum;
+        } else if (c === "multiply") {
+          var sum = a * b;
+          document.getElementById("result").innerHTML =
+            "Product of " + a + " and " + b + " is " + sum;
+        } else if (c === "divide") {
+          var sum = a / b;
+          document.getElementById("result").innerHTML =
+            "Division of " + a + " and " + b + " is " + sum;
+        } else {
+          document.getElementById("result").innerHTML =
+            'Please try again with "add", "minus", "multiply" or " divide" ';
+        }
+      };
+    </script>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif; backface-visibility: hidden">
+    First No. : <br />
+    <input type="text" id="fno" />
+    <br />
+    Second No. : <br />
+    <input type="text" id="sno" />
+    <br />
+    Operation to Perform: <br />
+    <input type="text" id="op" />
+    <br />
+    <br />
+    <input
+      type="button"
+      value="submit"
+      onclick="fn()"
+      style="
+        color: rgb(11, 49, 49);
+        border-radius: 10px;
+        border: black solid 1px;
+        position: relative;
+        text-align: center;
+      "
+    />
+
+    <p id="result"></p>
+  </body>
+</html>

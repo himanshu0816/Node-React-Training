@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+
+        h1{
+            background-color:lightgreen;
+            color: crimson;
+            font-family:  sans-serif;
+            font-size: xxx-large;
+        }
+        .fm{
+            justify-content: auto;
+            border: 2px solid black;
+            margin: auto;
+            width: 35%;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 align="center"><legend><u>STUDENT FORM DETAILS</u> </legend></h1> 
+    
+    
+    <form class="fm">
+        First Name :
+        <input type="text"  placeholder="Enter Your First Name " id="fn" required>
+        <br> <br>
+        <label >Last Name :</label>
+        <input type="text"  placeholder="Enter Your First Name" id="ln" required>
+        <br><br>
+        <label >Phone Number :</label>
+        <input type="text"  placeholder="Enter Your Number" id="pn" required>
+        <br><br>
+        <label >Email Address</label>
+        <input type="text" placeholder="Enter Your Email" id="email" required>
+        <br><br>
+        <strong>Gender</strong>
+        <br>
+        <input type="radio"name="Gender" value="Male" id="male">
+            <label>Male</label>
+            <input type="radio"name="Gender" value="Female" id="female">
+            <label>Female</label>
+
+            <br><br>
+            <strong><label >Choose Citizenship:</label></strong>
+            <select name="country" id="citizen" required>
+                <option value="indian">Indian</option>
+                <option value="NRI">Bhutan</option>
+                <option value="indian">Nepal</option>
+                <option value="NRI">Bangladesh</option>
+                
+                
+                </select>
+                <br><br>
+                <strong>Choose a Collage:</strong>
+                <select name="collage"  id="cllg" required>
+                <optgroup label="IIT">
+                <option value="IIt kanpur">IIt kanpur</option>
+                <option value="IIt kharagpur">IIt kharagpur</option>
+                <option value="IIt dehradun">IIt dehradun</option>
+                <option value="IIt delhi">IIt delhi</option>
+                </optgroup>
+                <optgroup label="NIT">
+                    <option value="NIT kanpur">NIT kanpur</option>
+                    <option value="NIT kharagpur">NIT kharagpur</option>
+                    <option value="NIT delhi">NIT delhi</option>
+                    <option value="NIT delhi">NIT delhi</option>
+                </optgroup>
+                <optgroup label="IIIT">
+                    <option value="IIIT Kanpur">IIIT Kanpur</option>
+                    <option value="IIIT khargapur">IIIT khargapur</option>
+                    <option value="IIIt delhi">IIIt delhi</option>
+                    <option value="IIIT pune">IIIT pune</option>
+                    </optgroup>
+            </select>
+            <br> <br>
+            <strong><label>Address:</label></strong>
+            <br>
+            <textarea   rows="4" cols="50" placeholder="Enter Your Delivery address" id="add" required>
+            </textarea>
+            <br> 
+            <strong> Select Subjects you want to take:</strong>
+        
+            <br>
+            <input type="checkbox" id="sub1"  value="Physics">
+            <label > Physics</label>
+            <input type="checkbox" id="sub2"  value="Chemistry">
+            <label > Chemistry</label><br>
+            <input type="checkbox" id="sub3"  value="Maths">
+            <label > Maths</label>
+            <input type="checkbox" id="sub4"  value="Computer Science">
+            <label > Computer Science</label><br>
+            <input type="checkbox" id="sub5"  value="English">
+            <label > English</label>
+            <input type="checkbox" id="sub6"  value="Biology">
+            <label > Biology</label><br>
+            
+<br><br>
+<strong><label> Education Qualification percentage</label></strong>
+<table>
+    <tr>
+    <th>CLASS</th>
+    <th>PERCENTAGE</th>
+    <th>PASS OUT YEAR</th>
+    </tr>
+    <tr>
+    
+    <td><input type="text" id="one" required></td>
+    <td><input type="text" id="two" required></td>
+    <td><input type="text" id="three" required></td>
+    </tr>
+</table>
+<br>
+<input align="center" type="button" value="submit" onclick="myfunction()">
+
+    </form>
+    <script>
+        function myfunction(){
+            var a=document.getElementById('fn').value;
+            var b=document.getElementById('ln').value;
+            var c=document.getElementById('pn').value;
+            var d=document.getElementById('email').value;
+            var e=document.getElementById('male')
+            var f=document.getElementById('female')
+            var g=document.getElementById('citizen').value;
+            var h=document.getElementById('cllg').value;
+            var i=document.getElementById('add').value;
+            var j=document.getElementById('sub1');
+            var k=document.getElementById('sub2');
+            var l=document.getElementById('sub3');
+            var m=document.getElementById('sub4');
+            var n=document.getElementById('sub5');
+            var o=document.getElementById('sub6');
+            var p=document.getElementById('one').value;
+            var q=document.getElementById('two').value;
+            var r=document.getElementById('three').value;
+            
+            document.write("First Name:"+a+"<br>"+"Last Name:"+b+"<br>"+"Phone Number:"+c+"<br>"+"Email Address:"+d+"<br>");
+            if(e.checked){
+            document.write("Gender:"+e.value);
+            }
+            else if(f.checked){
+            document.write("Gender:"+f.value);
+            }
+            document.write("Your Ctitizenship:"+g+"<br>"+"Your Collage Name :"+h+"<br>")
+            if(j.checked && k.checked && l.checked && m.checked && n.checked ){
+                document.write("Your subjects are:"+j.value+","+k.value+","+l.value+","+m.value+","+n.value)
+            }
+            else if(j.checked && k.checked && o.checked && m.checked && n.checked ){
+                document.write("Your subjects are:"+j.value+","+k.value+","+o.value+","+m.value+","+n.value+"<br>")
+            }
+            document.write("Your  class:"+p+"<br>"+"Your Percentage:"+q+"<br>"+"Your Passing Year:"+r+"");
+        }
+    </script>
+</body>
+</html>

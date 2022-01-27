@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    Enter Your Name:
+    <input type="text" id="name" placeholder="Enter Your Name">
+    <br>
+    <p id="demo"></p>
+    <input type="submit" value="submit" onclick="myfunction()">
+    <script>
+        function myfunction(){
+            var a=document.getElementById('name').value;
+            alert("Your Name is "+a);
+            // document.getElementById('demo').innerHTML="Your Name is "+a;
+        }
+    </script>
+</body>
+</html>

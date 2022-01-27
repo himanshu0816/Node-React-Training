@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1 id="head"></h1>
+        <p id ="p1"></p>
+        Your name:
+        <input type="text" id="demo">
+        <br>
+        Your Age:
+        <input type="text" id="demo1">
+        <br>
+        Your salary:
+        <input type="text" id="demo2">
+        <br>
+        Your city:
+        <input type="text" id="demo3">
+        <br>
+        Your Address:
+        <input type="text" id="demo4">
+    </form>
+    <input type="button" id="btn" value="submit" onclick="myfunction()">
+    <script>
+        function myfunction(){
+            var a=document.getElementById("demo").value;
+            var b=document.getElementById("demo1").value;
+            var c=document.getElementById("demo2").value;
+            var d=document.getElementById("demo3").value;
+            var e=document.getElementById("demo4").value;
+
+            document.getElementById("head").innerHTML="Your Deatils are";
+            document.getElementById("p1").innerHTML=`Your Name:${a} <br> Your Age:${b} <br> Your salary:${c} <br> Your City:${d} <br>Your address:${e}`;
+            console.log(`Your Name:${a}  Your Age:${b}  Your salary:${c}  Your City:${d} Your address:${e}`)
+        }
+    </script>
+</body>
+</html>

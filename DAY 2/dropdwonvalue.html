@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <label for="qualification">Qualification</label>
+    <select  id="qualification" name="qua">
+    <option value="Btech">BTech</option>
+    <option value="MCA">MCA</option>
+    <option value="Bsc">Bsc</option>
+    <option value="Msc">Msc</option>
+</select> -->
+
+<strong>Choose a Collage:</strong>
+<select name="collage" id="demo2">
+<optgroup label="IIT">
+<option value="IIt kanpur">IIt kanpur</option>
+<option value="IIt kharagpur">IIt kharagpur</option>
+<option value="IIt dehradun">IIt dehradun</option>
+<option value="IIt delhi">IIt delhi</option>
+</optgroup>
+<optgroup label="NIT">
+    <option value="NIT kanpur">NIT kanpur</option>
+    <option value="NIT kharagpur">NIT kharagpur</option>
+    <option value="NIT delhi">NIT delhi</option>
+    <option value="NIT delhi">NIT delhi</option>
+</optgroup> -->
+<optgroup label="IIIT">
+    <option value="IIIT Kanpur">IIIT Kanpur</option>
+    <option value="IIIT khargapur">IIIT khargapur</option>
+    <option value="IIIt delhi">IIIt delhi</option>
+    <option value="IIIT pune">IIIT pune</option>
+    </optgroup>
+</select>
+
+
+
+
+
+<input type="button" value="submit" onclick="myfunction()">
+<h1 id="demo">Course is </h1>
+<script>
+function myfunction(){
+    document.getElementById('demo').innerHTML="Your Course name is"+document.getElementById('demo2').value;
+    
+}
+</script>
+</body>
+</html>
