@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #f1f3f4;
+    font-family: sans-serif;
+}
+.top-nav-bar{
+    height: 120px;
+    top: 0px;
+    position: sticky;
+    background: #fff;
+    margin-bottom: 40px;
+    border-bottom: 3px solid orange;
+    z-index: 2;
+}
+.img{
+    height: 50px;
+    width: 5%;
+    margin: 5px 10px;
+}
+.form-control{
+    margin-top: 9px;
+    margin-left: 30px;
+    border: 1px solid orange !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.input-group-text{
+    margin-top:12px;
+    width: 4%;
+    background: orange !important;
+    border: 1px solid orange !important;
+    margin: 10px 8px 1px 0 !important;
+    border: 1px solid orange !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    cursor: pointer;
+}
+.search-box{
+    display: inline-flex;
+    width: 60%;
+    
+}
+.fa-search{
+    color: #fff;
+}
+.menu-bar{
+   
+    width: 35%;
+    height: 35%;
+    float: right;
+    background-color: white;
+    margin: 10px 10px;
+    
+}
+.menu-bar ul{
+    display: inline-flex;
+    float: left;
+}
+.menu-bar ul li{
+   
+    border-left: 1px solid #fff;
+    list-style-type: none;
+    padding: 15px 40px;
+    text-align: center;
+    background-color: orange;
+    cursor: pointer;
+}
+.menu-bar ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+.fa-shopping-cart{
+    margin-right: 3px;
+}
+@media only screen and (max-width: 900px)
+{
+    .top-nav-bar{
+        height: 118px;
+        border-bottom: 0;
+    }
+    .search-box{
+        width: 100px;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+    .menu-bar ul{
+        margin: 10px 0;
+        width: 100;
+    }
+    .menu-bar ul li
+    {
+        height: 57px;
+        width: 100%;
+    }
+
+}
+/*---------------------side-menu--------------*/
+.side-menu{
+    height: 79%;
+    width:  10%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+.side-menu ul{
+    margin-left: 5px;
+}
+.side-menu ul li{
+    list-style-type: none;
+    font-weight: bold;
+    
+    margin-top: 10px;
+   
+    cursor: pointer;
+}
+.side-menu ul li:hover
+{
+    color: orange;
+    margin-left: 20px;
+    
+}
+.side-menu ul li ul{
+    display: none;
+    z-index: 10;
+    top: 77px;
+}
+.side-menu ul li:hover ul{
+    display: block;
+    height: 400px;
+    margin-left: 14%
+    padding: 0px 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.5);
+}
