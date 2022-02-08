@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+</head>
+<!-- <body onunload="onunloadf()"> -->
+    <!-- <body resize="Resize()"> -->
+        <body>
+            
+        
+    
+    
+<!-- --------------------------MOUSEDOWN -->
+    <p id="btn"  onmousedown="mouseDown()" onmouseup="mouseUp()">MOUSEDOWN</p>
+
+    <!-----------------------OnLoad ------------------------------->
+    <input type="button" onclick="load()" value="show more">
+    <!--------Reszie The Window --------------------->-
+    <p> window resized <span id="sp"></span>times</p>
+    <!----------------------Onclick ----------------->
+    <button onclick="sub()">submit</button>
+    <p id="submit"></p>
+    <!------------------Double Click ---------->
+    <input type="button" value="doubleClick" ondblclick="dclcik()">
+    <p id="double"></p>
+
+
+    <!----------------------ONCHANGE FUNCTION --------------------------->
+    Enter your name: <input type="text" id="fname" placeholder="Enter Name Only Caps">
+        
+        <!-------------Reset Form ---------------->
+        <form >
+        Enter your name:
+    
+        <input type="text"  >
+        <input type="reset" >
+        
+    </form>
+    <script>
+        document.getElementById("fname").onchange = function() {
+            onchng()
+        };
+
+function onchng() {
+var x = document.getElementById("fname");
+x.value = x.value.toUpperCase();
+}
+
+        function mouseDown()
+        {
+            document.getElementById('btn').innerHTML=" Mouse Preesed";
+            
+        }
+        function mouseUp()
+        {
+            document.getElementById('btn').innerHTML=" MouseReleased";
+            
+        }
+        function load()
+        {
+            alert("Content is laoding plase wait");
+        }
+        function onunloadf()
+        {
+            alert("Thanks for Your paitent");
+        }
+        var x = 0;
+    function Resize() {
+    var txt = x += 1;
+    document.getElementById("sp").innerHTML = txt;
+}
+function sub()
+{
+    document.getElementById("submit").innerHTML="Name saved!!!!";
+}
+function dclcik()
+{
+    document.getElementById("double").innerHTML = "Double CLick Works!!!!";
+}
+    </script>
+</body>
+</html>

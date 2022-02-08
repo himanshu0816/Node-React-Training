@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+<input type=text id="n1" , placeholder="Enter First Number">
+
+<input type=text id="n2" , placeholder="Enter Second Number">
+
+<!--<input type=text id="n3" , placeholder="Answer">-->
+
+<script>
+	var n1=parseInt(document.getElementById("n1").value);
+	var n2=parseInt(document.getElementById("n2").value);
+	var n3=n1+n2;
+    switch (opertor)
+    {
+        case '+':
+           document.getElementById("Addition of two numbers is: " + ("n1"+ "n2"));
+            break;
+        case '-':
+            document.getElementById("Subtraction of two numbers is: " + (n1 - n2));
+            break;           
+        case '*':
+          document.getElementById("Multiplication of two numbers is: " + (n1 * n2));
+            break;
+        case '/':
+           document.getElementById("Division of two numbers is: " + (n1 / n2));
+            break;
+        case '%':
+            document.getElementById("Module of two numbers is: " + (n1 % n2));
+            break;
+        default:
+            document.write("<b> You have entered Wrong operator </b>");
+            document.write("<br \> Please enter Correct operator such as +, -, *, /");
+    }
+
+</script>
+    
+</body>
+</html>

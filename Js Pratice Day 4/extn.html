@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Student Registration Form</title>
+
+</head>
+<body>
+<u><center><h1>STUDENT REGISTRATION FORM</h1></center></u>
+<form>
+<table align="center" cellpadding="10"> <tr>
+<td>FIRST NAME</td>
+<td><input type="text" id="First_Name" maxlength="30"></input>
+
+</td>
+</tr>
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" id="Last_Name" maxlength="30"></input>
+
+</tr>
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="date" id="DOB" > </td>
+</tr>
+<tr>
+<td>Email ID</td>
+<td><input type="text" id="Email_Id" maxlength="100"></input></td>
+</tr> <tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" id="Mobile_Number" maxlength="10"></input>
+
+</td>
+</tr> <tr>
+<td>Gender</td>
+<td>
+Male<input type="radio" id="Gender-Male" name="Gender" value="Male"></input>
+Female<input type="radio" id="Gender-Female" name="Gender" value="Female"></input>
+</td>
+</tr>
+<tr>
+<td>ADDRESS> <br><br><br></td>
+<td><textarea type="text" id="Address" rows="4" cols="30"></textarea></td>
+</tr> <tr>
+<td>CITY</td>
+<td><input type="text" id="city" maxlength="30"></input>
+
+</td>
+</tr>
+<tr>
+<td>PIN CODE</td>
+<td><input type="text" id="Pin Code" maxlength="6"></input>
+
+</td>
+</tr>
+<tr>
+<td>STATE</td>
+<td><input type="text" id="State" maxlength="30"></input>
+
+</td>
+</tr>
+<tr>
+<td>COUNTRY</td>
+<td><input type="text" id="Country" value="India" readonly="readonly"></input>
+</td>
+</tr> <tr>
+<td>HOBBIES<br/><br/></td> <td>
+Drawing
+<input type="Checkbox" id="Hobby_Drawing" value="Drawing"></input>
+Singing
+<input type="Checkbox" id="Hobby_Singing" value="Singing"></input>
+others
+<input type="Checkbox" id="Hobby_Others" value="Others"></input>
+<input type="text" id="other_Hobby" maxlength="30"></input>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="Submit" onsubmit="disp()" value="Submit"></input>
+<input type="Reset" value="Reset"></input>
+</td>
+</tr>
+</form>
+</table>
+<script>
+    function disp(){
+    var fname=document.getElementById("First_Name").value;
+    
+    var lname=document.getElementById("Last_Name").value;
+    var DOB1=document.getElementById("DOB").value;
+    var Email=document.getElementById("Email_Id").value;
+    var MNumber=document.getElementById("Mobile_Number").value;
+    var Add=document.getElementById("Address").value;
+    document.write(fname+ " " + lname);
+    document.write(DOB1);
+    document.write(Email);
+    document.write(MNumber);
+    document.write(Add);
+    }
+    </script>
+</body>
+</html>
+

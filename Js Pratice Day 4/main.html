@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        form{
+            border: 2px solid red;
+            float: center;
+        }
+        h1{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <h1 align="center"><u>STUDENT REGITRATION DETAILS</u></h1> 
+    
+    <br><br>
+    
+    <form align="center">
+        <label for="First Name" >First Name :</label>
+        <input type="text"  id="fname" placeholder="Enter Your First Name" >
+        <br> <br>
+        <label for="First Name">Last Name :</label>
+        <input type="text" id="sname" placeholder="Enter Your First Name">
+        <br><br>
+        <label for="First Name">Phone Number :</label>
+        <input type="text" id="pnum" placeholder="Enter Your Number">
+        <br><br>
+        <label for="Email">Email Address</label>
+        <input type="text" id="em" placeholder="Enter Your Email">
+        <br><br>
+        <strong>Gender</strong>
+        <br>
+        <select id="gen">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Others">Others</option>
+            
+        </select>
+            <br><br>
+            <strong><label for="country">Choose Your State:</label></strong>
+            <select id="st">
+                <option value="indian">UP</option>
+                <option value="UK">UK</option>
+                <option value="j&k">j&k</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+                <br><br>
+                <label for="Items">Enter Your City Name:</label>
+                <input type="text" id="cname" placeholder="Enter Your City Name">
+            
+            <br> <br>
+            <label for="First Name"> Address Line1 :</label>
+        <input type="text" id="ad1" placeholder="Enter Your Address">
+<br><br>
+<label for="First Name"> Address Line2 :</label>
+        <input type="text" id="ad2" placeholder="Enter Your Address">
+                <br><br>
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <input type="radio" name="gender" value="Others">Others
+    <div id="result"></div>
+    <br><br>
+    <p><strong>Gender</strong></p>
+    <input type="radio" name="gender" value="Male" id="">
+    <input type="radio" name="gender" value="Female" id="">
+    <input type="radio" name="gender" value="others" id="">
+    <br>
+    <label> Your Gender is</label>
+    <input type="text"  id=""result>
+    <br>
+<input align="center"  type="submit" name="btn" id="btn" value="submit" onclick="sub()">
+</form>
+<script>
+    function sub(){
+
+    var n1=document.getElementById('fname').value;
+    var n2=document.getElementById('sname').value;
+    var n3=document.getElementById('pnum').value;
+    var n4=document.getElementById('em').value;
+    var n5=document.getElementById('gen').value;
+    var n6=document.getElementById('st').value;
+    var n7=document.getElementById('cname').value;
+    var n8=document.getElementById('ad1').value;
+    var n9=document.getElementById('ad2').value;
+    document.write("------------------------------------------------------------------------------------------------------------------"+"Garther Information Of Student "+"-----------------------------------------------------------------------------------------------------------------------");
+        document.write("First Name Of Studnet is  :"+" "+n1+"<br>"+"Second Name Of Student is :"+" "+n2+"<br>");
+        document.write("Phone Number Of Studnet is  :"+" "+n3+"<br>"+"Email address Of Student is :"+" "+n4+"<br>");
+        document.write("Gender Of Studnet is  :"+" "+n5+"<br>"+"State Of Student is :"+" "+n6+"<br>");
+        document.write("City Of Studnet is  :"+" "+n7+"<br>"+" Address Of Student is :"+" "+n8+" "+n9+"<br>");
+        
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" name="fname" id="fname" placeholder="Enter First Number">
+        <input type="text" name="optr" id="optr" placeholder="Enter Operator" value="">
+        <input type="text" name="Sname" id="Sname" placeholder="Enter Second Number">
+        <input type="button" name="btn" id="btn" value="calculate" onclick="calc()">
+        <label >=</label>
+        <input type="text" name="ans" id="ans">
+    </form>
+
+    <script>
+        function calc()
+        {    var op=document.getElementById('optr').value;
+            var n1=document.getElementById('fname').value;
+            // console.log(n1)
+            var n2=document.getElementById('Sname').value;
+        }
+        switch('op')
+        {
+            case'+':
+            var num3=parseInt(n1)+parseInt(n2);
+            document.write("Sum of Two Numbers is "+num3);
+            // console.log(num3)
+            // document.getElementById('ans')
+            // console.log(ans)
+            // ans.textContent="num3";
+            break;
+            case'-':
+            var num3=parseInt(n1)+parseInt(n2);
+            document.getElementById('ans').textContent=num3;
+            break;
+            case'*':
+            var num3=parseInt(n1)+parseInt(n2);
+            document.getElementById('ans')
+            ans.innerHTML=num3;
+            break;
+            case'/':
+            var num3=parseInt(n1)+parseInt(n2);
+            document.getElementById('ans')
+            ans.innerHTML=num3;
+            break;
+            default:
+                document.write("You enter wrong option")
+        }
+    
+        
+    </script>
+</body>
+</html>

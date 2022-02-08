@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+try{
+document.write("Try block begins<br>");
+// create a syntax error
+eval ("10 + * 5");
+} catch( errVar ) {
+document.write("Exception caught<br>");
+// errVar is an Error object
+// All Error objects have a name and message properties
+document.write("Error name: " + errVar.name + "<br>");
+document.write("Error message: " + errVar.message +
+"<br>");
+} finally {
+document.write("Finally block reached!");
+}
+</script>
+</body>
+</html>

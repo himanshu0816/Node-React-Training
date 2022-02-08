@@ -14,3 +14,5 @@ switch (day) {
   case "sunday":
     console.log("Sunday");
 }
+
+let n= A;
